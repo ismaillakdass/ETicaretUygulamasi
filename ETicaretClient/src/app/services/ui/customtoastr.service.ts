@@ -1,0 +1,40 @@
+import { trigger } from '@angular/animations';
+import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CustomtoastrService {
+  constructor(private toastr : ToastrService) {    
+  }
+
+  message(title: string, message: string,toastrOptions: Partial<ToastrOptions>){
+    this.toastr[toastrOptions.messageType](message,title, {
+      positionClass: toastrOptions.position
+    }); 
+  }
+}
+
+export class ToastrOptions {
+  messageType: ToastrMessageType = ToastrMessageType.Info;
+  position: ToastrMessagePosition = ToastrMessagePosition.BottomRight;
+}
+
+export enum ToastrMessageType{
+  Success = "success",
+  Info = "info",
+  Warning = "warning",
+  Error = "error"
+}
+
+export enum ToastrMessagePosition{
+  TopRight="toast-top-right",
+  BottomRight="toast-bottom-right",
+  BottomLeft="toast-bottom-left",
+  TopLeft="toast-top-left",  
+  TopFullWidth="toast-top-full-width",
+  BottomFullWidth="toast-bottom-full-width",
+  TopCenter="toast-top-center",
+  BottomCenter="toast-bottom-center"
+}

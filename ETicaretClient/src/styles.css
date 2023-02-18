@@ -1,0 +1,4 @@
+/* https://stackoverflow.com/questions/50856472/how-to-import-angular-material-css
+ */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; 

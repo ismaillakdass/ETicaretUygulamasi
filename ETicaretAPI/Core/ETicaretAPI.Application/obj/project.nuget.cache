@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xPz/k3LyI6sSOsxL9fJd87j8Ln6/RSUuBg+4WkTDFHhxoGlNTiEFvvohuI0WX0Hb4LH9qpRuWmHat4Gq2mVhmg==",
+  "dgSpecHash": "psDopTnR4+aq0h81dAG7s9uNfZgHbTobKwO8FM1uk0/2uQz/a/8WWfsdi+4feAH7lO0L4dNrqVCBA+cXHQslnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ismail\\Desktop\\ETicaretUygulamasi\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj",
+  "projectFilePath": "D:\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ismail\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "C:\\Users\\ismail\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",

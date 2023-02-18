@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OpooLs/1VrfwJkNXkSzPrHogn6oOqVj+Hrqzwkdl5d10zZwPZmMnAMFNyGNSJSZtknflwNZNMWTP+xec6JNOKQ==",
+  "dgSpecHash": "9mQSEZ6cEhpN9lBS2ExJtl2i7eEvJLmdUgJ/XNIkpV9z49MabMmsUY2dAvP5j42CYQM3QhmuobjGmlJKtMxpHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ismail\\Desktop\\ETicaretUygulamasi\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj",
+  "projectFilePath": "D:\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ismail\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ismail\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
