@@ -7,7 +7,9 @@ builder.Services.AddControllers();
 builder.Services.AddPersistenceServices();
 
 builder.Services.AddCors(option => option.AddDefaultPolicy(policy=>
-policy.WithOrigins("http://localhost:4200","https://localhost:4200").AllowAnyHeader().AllowAnyMethod()
+policy.WithOrigins("http://localhost:4200","https://localhost:4200")
+.AllowAnyHeader()
+.AllowAnyMethod()
 ));
 
 builder.Services.AddEndpointsApiExplorer();
