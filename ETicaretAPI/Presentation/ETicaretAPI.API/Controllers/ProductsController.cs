@@ -1,6 +1,8 @@
 ﻿using ETicaretAPI.Application;
 using ETicaretAPI.Application.ViewModels.Product;
 using ETicaretAPI.Domain.Entities;
+using ETicaretAPI.Persistence.Contexts;
+using ETicaretAPI.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -40,14 +42,25 @@ namespace ETicaretAPI.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] ProductVM productVM)
         {
-            await _writeProductRepository.AddAsync(new()
+            try
             {
-                Name = productVM.Name,
-                Price = productVM.Price,
-                Stock = productVM.Stock,
-            });
-            await _writeProductRepository.SaveAsync();
-            return StatusCode((int)HttpStatusCode.Created);
+                await _writeProductRepository.AddAsync(new()
+                {
+                    //Id= Guid.NewGuid(),
+                    Name = productVM.Name,
+                    Price = productVM.Price,
+                    Stock = productVM.Stock,
+                });
+                await _writeProductRepository.SaveAsync();
+
+                return StatusCode((int)HttpStatusCode.Created);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+    
         }
 
         [HttpPut]
